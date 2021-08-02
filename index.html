@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Elon Quotes API</title>
+</head>
+<header class="header">
+    <div class="logo">
+        <img class="elon-img" src="/images/elon.png" alt="Elon Musk">
+        <h1 class="big-title">Elon Quotes API</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item selected"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://github.com/euzzeud" target="_blank" class="nav-link">Github</a></li>
+            <li class="nav-item"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="nav-link">Approved by Elon Musk</a></li>
+            <li class="nav-item"><a href="https://euzzeud.x-h.fr/" target="_blank" class="nav-link">About Euzzeud</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="top-page">
+        <h2 class="title">What is the purpose of this API?</h2>
+        <p class="details">The purpose of this API is simple! Provide you with quotes from famous Space X founder, Elon Musk!
+            <br>
+            To use it, you do not need to authenticate yourself or a specific token. The API is open and free! It will allow you to enrich all your projects with beautiful quotes from Elon Musk.
+            </p>
+            <br>
+        <center>
+            <div class="demo">
+                <p id="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, et ducimus.</p>
+                <p style="font-style: italic; font-size: 12px; text-align: right;">Elon Musk</p>
+                <p style="font-size: 10px; font-weight: bold; text-align: left;" id="quote-id">ID: 0</p>
+                <button class="btn-generate" title="Another quote? Click here!" onclick="nextQuote()">Another quote? Click here!</button>
+            </div>
+        </center>
+    </section>
+    <div class="conteneur">
+        <section class="endpoints">
+            <h2 class="title">Endpoints</h2>
+            <p class="details">Here are the different Endpoints that you can use with the API.</p>
+            <div class="introduce">
+                <h5 class="label-endpoint">All quotes</h5>
+                <br>
+                <code><span class="method">GET</span> /api/all</code>
+            </div>
+            <div class="introduce">
+                <h5 class="label-endpoint">Random quote</h5>
+                <br>
+                <code><span class="method">GET</span> /api/random</code>
+            </div>
+            <div class="introduce">
+                <h5 class="label-endpoint">Quote by ID</h5>
+                <br>
+                <code><span class="method">GET</span> /api/id/:id</code>
+            </div>
+        </section>
+        <section class="example">
+            <h2 class="title">Example</h2>
+            <iframe height="300" style="width: 800px;" scrolling="no" title="Example for Elon Quote API" src="https://codepen.io/euzzeud/embed/RwVJQKO?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="false" allowfullscreen="false">
+              </iframe>
+        </section>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", nextQuote())
+
+    function nextQuote(){   
+        fetch("/api/random")
+        .then((r) => r.json())
+        .then(({ id, quote }) => {
+            document.getElementById("quote-id").innerHTML = `ID: ${id}`;
+            document.getElementById("quote").innerHTML = quote;
+        })
+    }
+    </script>
+</body>
+<footer class="footer">
+        <p style="font-weight: bold; font-size: 16px;"><span style="text-transform: uppercase;">Elon Quotes API</span> &copy; 2021 Euzzeud</p>
+        <p style="font-style: italic; font-size: 14px;">Powered by Node.js and Express.js</p>
+</footer>
+</html>

@@ -1,0 +1,127 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+}
+
+header.header {
+    width: 100%;
+    height: 140px;
+    background-color: #4752c4;
+}
+
+div.logo {
+    display: flex;
+    float: left;
+    margin: 15px;
+}
+
+.big-title {
+    color: black;
+    text-transform: uppercase;
+    line-height: 100px;
+    margin-left: 10px;
+}
+
+img.elon-img {
+    border: solid 4px white;
+    border-radius: 100px;
+    width: 100px;
+}
+
+nav.navbar {
+    display: flex;
+}
+
+li.nav-item {
+    list-style-type: none;
+    display: inline;
+    margin: 0px 10px 0px 10px;
+}
+
+a.nav-link, .selected {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: solid 2px transparent;
+    border-radius: 15px;
+}
+
+a.nav-link:hover, .selected {
+    background-color: #3c45a5;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+section {
+    margin: 15px;
+}
+
+
+div.conteneur {
+    display: flex;
+}
+
+h2.title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+p.details {
+    color: #9ca3af;
+}
+
+div.demo {
+    color: white;
+    border: solid 4px #4752c4;
+    width: 500px;
+    padding: 10px;
+}
+
+button.btn-generate {
+    cursor: pointer;
+    border: solid 2px transparent;
+    background-color: #4752c4;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+button.btn-generate:hover {
+    background-color: #3c45a5;
+    font-weight: bold;
+}
+
+div.introduce {
+    margin-top: 25px;
+}
+
+h5.label-endpoint {
+   color: #9ca3af;
+   text-transform: uppercase;
+   font-weight: 1000;
+}
+
+code {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    color: white;
+    border: solid 2px transparent;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+}
+
+span.method {
+    color: #F8C555;
+}
+
+footer.footer {
+    padding-top:35px;
+    background:#4752c4;
+    width:100%;
+    height:70px;
+    text-align: center;
+    color: white;
+}
