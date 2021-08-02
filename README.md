@@ -37,3 +37,9 @@ fetch("http://localhost:8080/api/random")
     */
 });
 ```
+
+## Learn more...
+
+**Website:** *https://elon-quotes-api.euzzeud.x-h.fr*
+**Open an issue:** *https://github.com/euzzeud/ElonQuotesAPI/issues*
+**Twitter:** https://twitter.com/euzzeud
