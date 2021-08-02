@@ -25,7 +25,7 @@ GET /api/id/:id
 ## Example
 
 ```js
-fetch("http://localhost:8080/api/random")
+fetch("https://elon-quotes-api.euzzeud.x-h.fr/api/random")
     .then(res => res.json())
     .then(json => {
   console.log(json)
