@@ -43,3 +43,4 @@ fetch("https://elon-quotes-api.euzzeud.x-h.fr/api/random")
 **Website:** *https://elon-quotes-api.euzzeud.x-h.fr*  
 **Open an issue:** *https://github.com/euzzeud/ElonQuotesAPI/issues*  
 **Twitter:** https://twitter.com/euzzeud
+**Apple Shortcut:** *https://www.icloud.com/shortcuts/450d621a4fa14cdc93ac8493e311100e*
