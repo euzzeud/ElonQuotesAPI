@@ -18,5 +18,25 @@
     {
         "id":5,
         "quote":"If you're trying to create a company, it's like baking a cake. You have to have all the ingredients in the right proportion."
+    },
+    {
+        "id":6,
+        "quote":"It's OK to have your eggs in one basket as long as you control what happens to that basket."
+    },
+    {
+        "id":7,
+        "quote":"Great companies are built on great products."
+    },
+    {
+        "id":8,
+        "quote":"I think you should always bear in mind that entropy is not on your side."
+    },
+    {
+        "id":9,
+        "quote":"Self-driving cars are the natural extension of active safety and obviously something we should do."
+    },
+    {
+        "id":10,
+        "quote":"Any product that needs a manual to work is broken."
     }
 ]
